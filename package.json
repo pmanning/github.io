@@ -1,0 +1,22 @@
+{
+  "name": "loa-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss assets/css/main.css -o _site/assets/css/main.css",
+    "build:jekyll": "jekyll build",
+    "build": "npm run build:css && npm run build:jekyll",
+    "serve": "npm run build:css && jekyll serve --livereload",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.1"
+  }
+}
